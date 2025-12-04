@@ -35,7 +35,6 @@ Go to the button named **"Mi perfil"** to access your profile and upload the scr
 Before uploading, listen with **netcat** on port `9999`.
 
 ![perfil](./assets/mi_perfil.png)
-![nc1](./assets/nc 1.png)
 
 After uploading the script, we receive a cookie.
 
