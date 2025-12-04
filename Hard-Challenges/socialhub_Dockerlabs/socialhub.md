@@ -16,11 +16,11 @@ nmap -p22,5000 -sCV <IP> -oN targeted
 
 On the web service running on **port 5000**, we can register a new user.
 
-![register](./assets/Captura de pantalla de 2025-12-03 17-56-07.png)
+![register](./assets/Captura_de_pantalla_de_2025-12-03_17-56-07.png)
 
 After registering, we can log in.
 
-![login](./assets/Captura de pantalla de 2025-12-03 17-57-32.png)
+![login](./assets/Captura_de_pantalla_de_2025-12-03 17-57-32.png)
 
 Inside the **/feed** directory, we can see another user named **admin**. We also notice that we can upload a profile image. This is a good opportunity to try an **XSS attack** to steal the admin's cookie.
 
