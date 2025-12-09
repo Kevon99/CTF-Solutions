@@ -71,7 +71,7 @@ Inside the WordPress admin panel, I navigated to:
 
 ![image](./assets/apparence.png)
   
-![image](./assets404.png)
+![image](./assets/404.png)
 
 Since the file was editable, it was possible to inject arbitrary PHP code via the theme.
 
