@@ -3,7 +3,7 @@
 ### Nmap
 Nmap scan to discovery open ports.
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv <IP>`
-![[images/nmapScan.png]]
+!(images/nmapScan.png)
 Port scan services and versions
 
 `nmap -p21,22,80 -sCV <IP> -oN targeted`
