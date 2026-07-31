@@ -60,13 +60,13 @@ We don't have permission to see this file
 
 we saw this before on the view-source from the index.php
 
-![asdf](post2.png)
+![asdf](./images/post2.png)
 
 # LFI (Local File Inclusion)
 
 I tried referer the /etc/passwd directory because the post.php referer somes files, and i tried to make a ref to the passwd, and it works.
 
-![asdf](passwd.png)
+![asdf](./images/passwd.png)
 
 now we can see this file : secret_file_do_not_read.txt
 
@@ -147,7 +147,7 @@ now you can do `Ctrl+C` and keep in.
 flag3: 
 `find / -name flag_3.txt 2>/dev/null`
 
-![asdf](flag3.png)
+![asdf](./images/flag3.png)
 
 flag4 and more things:
 

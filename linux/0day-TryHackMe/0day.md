@@ -9,7 +9,7 @@ We begin with a comprehensive TCP port scan to identify all open ports on the ta
 `nmap -p- --open -sS --min-rate 5000 -n -Pn -vvv <IP>`
 
 
-![[maquinas/CTF/linux/0day-TryHackMe/assets/Captura_de_pantalla_de_2025-10-01_17-51-14.png]]
+![images](./assets/Captura_de_pantalla_de_2025-10-01_17-51-14.png)
 
 With the open ports identified (22 and 80), we proceed with a detailed service and version enumeration scan on those specific ports.
 
