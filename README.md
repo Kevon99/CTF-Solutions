@@ -1,4 +1,4 @@
-# CTF-Solutions
+# Labs_Writeups
 
 A personal, hands-on collection of professional-grade write-ups documenting complete exploitation paths from TryHackMe, Hack The Box, DockerLabs and other CTF platforms. Each report follows a structured pentesting methodology — reconnaissance, enumeration, exploitation, privilege escalation — including command-by-command breakdowns, tool usage rationale, and remediation recommendations.
 
