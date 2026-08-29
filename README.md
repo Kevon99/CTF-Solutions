@@ -1,4 +1,4 @@
-# Labs_Writeups
+# Labs-Writeups
 
 A personal, hands-on collection of professional-grade write-ups documenting complete exploitation paths from TryHackMe, Hack The Box, DockerLabs and other CTF platforms. Each report follows a structured pentesting methodology — reconnaissance, enumeration, exploitation, privilege escalation — including command-by-command breakdowns, tool usage rationale, and remediation recommendations.
 
@@ -11,6 +11,7 @@ A personal, hands-on collection of professional-grade write-ups documenting comp
 | Machine | Platform | Key Techniques | Write-up |
 |---------|----------|----------------|----------|
 | **Operation Endgame** | TryHackMe | SMB Guest session · RID Cycling · Kerberoasting · Password spray (credential reuse) · ACL abuse (`GenericWrite` → forced AS-REP Roasting) · Plaintext credential discovery | [Report](active_directory/operation_endgame/Operation%20Endgame%20THM.md) |
+| **Fusion Corp** | TryHackMe | Web info disclosure (.odt backup) · AS-REP Roasting · BloodHound · WinRM (Remote Management Users) · LDAP cleartext password · Backup Operators (SeBackup/SeRestore) · ACL abuse (`Acl-FullControl.ps1`) | [Report](active_directory/fusion_corp/Fusion%20Corp%20THM.md) |
 | **Soupedecode 01** | TryHackMe | Null session SMB · RID Cycling · Username-as-password spray · Kerberoasting · Backup file disclosure (NTLM hashes) · Pass-the-Hash | [Report](active_directory/soupedecode01/soupedecode01.md) |
 | **Support** | Hack The Box | Unauthenticated footprinting · LDAP enumeration · Credential hunting · Domain privilege escalation | [Report](active_directory/support/Support%20%28%20Hack%20the%20box%20%29%20-%20Professional%20Writeup.md) |
 
